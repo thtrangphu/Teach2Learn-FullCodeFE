@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teach2Learn</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/catelogies.css">
+    <link rel="stylesheet" href="/css/slider.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- CSS only -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    /> -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Lobster&amp;family=Playball&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiperjs hiệu ứng slidebar -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <nav style="justify-content: space-evenly !important;">
+      <div class="container nav__container navbar-expand-lg">
+        <a href="index.html"
+          ><img src="/images/logo2.png" class="logo" alt=""  /></a>
+        <div class="cate-dropdown ">
+          <button class="btn-radius-trans btn">
+            <i class="fa fa-align-justify"  style="color: #a1a7b3"></i>  <a href="catelogies.html">Categories</a></button>
+          <div class="dropdown-content">
+              <ul>
+                  <li>Development</li>
+                  <li>Business</li>
+                  <li> IT & Softwar</li>
+                  <li>Office Productivity</li>
+                  <li>Personal Development</li>
+              </ul>
+          </div>
+      </div>
+         <!--search bar of website-->
+        <div class="search-box">
+          <form class="search-container">
+            <input type="text" id="search-bar" class="input-area" placeholder="Search for Courses" /><a href="catelogies.html"><i class="fa fa-search input-logo"></i></a>
+          </form>
+        </div>
+        
+        <div class="cart">
+          <a href="cart.html" class="shopping-cart"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+        
+        <ul class="nav__menu">
+          <!-- <li><a href="index.html">Home</a></li> -->
+          <li><a href="about.html">Q&A</a></li>
+          <li><a href="catelogies.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li> 
+          <li><a href="log-in.html">Log in</a></li>
+          <li><a href="sign-up.html">Sign up</a
+          ></li>
+        </ul>
+       
+        <!-- ------------ -->
+        <button id="open-menu-btn">
+          <i class="fa fa-bars"></i>
+        </button>
+        <button id="close-menu-btn">
+          <i class="fa fa-times"></i>
+        </button>
+        <!-- ------------ -->
+      </div>
+      
+    </nav>
+    <!-- ==============END OF NAVBAR ============= -->
+
+    
+
+
+
+
+    <div class='atFilter'>
+      <div class='insider-container111'>
+        <div class='container-heading'><h1>Python courses</h1></div>
+        <div class='py-relates-to'>Python relates to <span class='py-relate-to-pack'>Development IT & software</span></div>
+        <div class='nooflearners'>29,423,221 learners</div>
+        <div class="class-yyy"><h3>Courses to get you started</h3></div>
+
+          <div class="container-list">
+              <div class="wrapper">
+                <div class="products">
+                  <ul id="unorderedlist" onclick="singleProduct()">
+                  </ul>
+                </div>
+              </div>
+              <div id="click2"><span class="left-arrow"></span></div>
+              <div id="click"><span class="right-arrow"></div>
+          </div>
+        </div> 
+      <!-- </div> 
+    </div>      -->
+
+      <div class="class-yyy newbie12 mt3"><h3>Learning series</h3></div>
+      <div class='py-head-desc'>A topic-based collection of courses, based on the patterns of other learners</div>
+
+
+      <div class='createnewmar'>
+          <div style='display:flex;align-items: center;'>
+              <div class="class-yyy newbie12">Learn python</div>
+              <div class='movethissplbtn'> <a href="product.html" class='insidecontainer-11-btn'>Explore series</a> </div>
+          </div>
+          <div class='py-relates-to'>3 courses</div>
+
+          <div class='grid-classthing'>
+          <div >
+              <div class='boxfortheline'><span class='roundnumberborder'>1</span>
+                  <div class='lineinside'></div>
+              </div>
+              <img src="/images/1.jpg" width="370" height="230">
+              <div class="class-yyy reducethesizeofit">Python 3: Deep Dive (Part 2 - Iteration, Generators)</div>
+            
+          </div>
+          
+          <div >
+              <div class='boxfortheline'><span class='roundnumberborder'>2</span>
+                  <div class='lineinside'></div>
+              </div>
+              <img src="/images/2.jpg" width="370" height="230">
+              <div class="class-yyy reducethesizeofit">Python 3: Deep Dive (Part 3 - Hashmap)</div>
+          </div>
+          <div >
+              <div class='boxfortheline'><span class='roundnumberborder'>3</span>
+                  <div class='lineinside'></div>
+              </div>
+              <img src="/images/3.jpg" width="370" height="230">
+                          <div class="class-yyy reducethesizeofit">Python 3: Deep Dive (Part 4 - OOP)</div>
+          </div>
+          </div>
+      </div>
+         
+      <h2 class='py-head'>All Python courses</h2>
+      <p class='py-head-desc'>Python instructors on Teach2Learn specialize in everything from software development to data analysis, and are known for their effective, friendly instruction for students of all levels.</p>
+
+      <div style='border:  1px solid #000;margin-bottom: 25px;'>
+          <div style="display: flex;padding:13px">
+            <i class="fa fa-info-circle" aria-hidden="true" ></i>
+ 
+              <!-- <img src='https://i.ibb.co/MRNqpWQ/svgimage.jpg' width="30" height="30"> -->
+              <div class='guarantee-class'>Not sure? All courses have a 30-day money-back guarantee</div>
+          </div>  
+      </div>
+      <div style="display: flex;margin-bottom: 1rem;">
+          <button class='button-1-leftfilter' onclick="closed()">Filter</button>
+          <select  class='select-button' id='filterusingselect' onclick="updatethechanges()">
+              <option value="" disabled="">Sort</option>
+              <option value="highest-rated" id='highrating'>Highest Rated</option>
+              <option value="popularity">Most Popular</option>
+              <option value="newest">Newest</option>
+          </select>
+      </div>
+      
+        
+      <div style='display:flex; color: #000;'>
+        <div id='tamasaha'class='filter-border'>
+            <div class='movemarginleft'>
+                <button class="collapsible class-side-filter">Ratings</button>
+                <div class="content">
+                    <input type="radio" id="ratingscore" >
+                     <label for="ratingscore">4.5 & up</label><br>
+                    <input type="radio" id="ratingscore" name="fav_language" value="HTML">
+                     <label for="ratingscore">4 & up</label><br>
+                    <input type="radio" id="ratingscore" name="fav_language" value="HTML">
+                     <label for="ratingscore">3.5 & up</label><br>
+                    <input type="radio" id="ratingscore" name="fav_language" value="HTML">
+                     <label for="ratingscore">3 & up</label><br>
+                </div>    
+                <button class="collapsible class-side-filter">Video duration</button>
+                <div class="content">
+                    <input type="checkbox" id="videod" >
+                     <label for="videod">0 - 1 Hour</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod">1 - 3 Hours</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod">3 - 6 Hours</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod">6 - 17 Hours</label><br>
+                    
+                </div> 
+                <button class="collapsible class-side-filter">Topics</button>
+                <div class="content">
+                    <input type="checkbox" id="videod" >
+                     <label for="videod">Data science</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod">Machine Learning</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod">Django</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod"></label>Python Scripting <br>
+                </div>
+
+                <button class="collapsible class-side-filter">Subcategory</button>
+                <div class="content">
+                    <input type="checkbox" id="videod" >
+                     <label for="videod">Programming Languages </label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod">Others in IT & Software</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod">Data Science</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod"></label>IT Certifications<br>
+                </div>
+
+                <button class="collapsible class-side-filter">Level</button>
+                <div class="content">
+                    <input type="checkbox" id="videod" >
+                     <label for="videod">Beginners</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod">All Levels</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod">Intermediate</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod"></label>Expert <br>
+                </div>
+
+                <button class="collapsible class-side-filter">Language</button>
+                <div class="content">
+                    <input type="checkbox" id="videod" >
+                     <label for="videod">English</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod">Portuguese</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod">Espanol</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod"></label>Turkese <br>
+                </div>
+
+                <button class="collapsible class-side-filter">Price</button>
+                <div class="content">
+                    <input type="checkbox" id="videod" >
+                     <label for="videod">Paid</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod">Free</label><br>
+                    
+                </div>
+
+                <button class="collapsible class-side-filter">Features</button>
+                <div class="content">
+                    <input type="checkbox" id="videod" >
+                     <label for="videod">Subtitles</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod">Quizzes</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod">Coding Excercises</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod"></label>Practise tests <br>
+                </div>
+
+
+                <button class="collapsible class-side-filter">Subtitles</button>
+                <div class="content">
+                    <input type="checkbox" id="videod" >
+                     <label for="videod">English</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod">Espanol</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod">Portugues</label><br>
+                    <input type="checkbox" id="videod" name="fav_language" value="HTML">
+                     <label for="videod"></label> Italiano <br>
+                </div>
+            
+            </div> 
+        
+        </div>
+        <div id='cont' onclick="singleProduct()" style="background-color: rgba(204, 204, 204, 0.342); padding-right: 10px;"></div> 
+    </div>
+
+        <div class="pagination">
+            <a href="#" style="color: #000;">&laquo;</a>
+            <a href="#" style="color: rgb(255, 255, 255); font-weight: 700; background-color: blue; border-radius: 35px;">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#" style="color: #000;">&raquo;</a>
+        </div>
+
+
+
+        
+    </div>
+    <div class='immediate-after-pagination' >
+        <div class='insdie-after-pg' style="justify-content: space-around;">
+            <div class='inside-after-pg-2'>
+              <i class="fa fa-id-card-o s44" aria-hidden="true"></i>
+
+                <div class='insdie-after-pg-22 '>Over 155,000 video courses on career and <br/> personal skills</div>
+            </div>
+            <div  class='inside-after-pg-2'>
+              <i class="fa fa-lightbulb-o s44" aria-hidden="true"></i>
+              <div class='insdie-after-pg-22'>Choose from top industry instructors <br/>across the world</div>
+            </div>
+            <div  class='inside-after-pg-2'>
+              <i class="fa fa-line-chart s44" aria-hidden="true"></i>
+              <div class='insdie-after-pg-22'>Learn at your own pace, with lifetime access <br/>on mobile and desktop</div>
+            </div>
+        </div>
+        
+    </div>
+    <div class='container-lastin-page' >
+        <h1>Learn more about Python</h1>
+        <div class='py-head-desc lastin-page-desc  mt3'>Whether you work in machine learning or finance, or are pursuing a career in web development or data science, Python is one of the most important skills you can learn. Python's simple syntax is especially suited for desktop, web, and business applications. Python's design philosophy emphasizes readability and usability. Python was developed upon the premise that there should be only one way (and preferably one obvious way) to do things, a philosophy that has resulted in a strict level of code standardization. The core programming language is quite small and the standard library is also large. In fact, Python's large library is one of its greatest benefits, providing a variety of different tools for programmers suited for many different tasks.</div>
+        <div class='guarantee-class class-faqs '><h2>Frequently asked questions</h2></div>
+
+        
+        <div style="color: #000;">
+          
+          <button class="collapsible guarantee-class class-faqs">What is Python?</button>
+          <div class="content" >
+          <p class='py-head-desc lastin-page-desc'>Python is a general-purpose, object-oriented, high-level programming language. Whether you work in artificial intelligence or finance or are pursuing a career in web development or data science, Python is one of the most important skills you can learn. Python's simple syntax is especially suited for desktop, web, and business applications. Python's design philosophy emphasizes readability and usability. Python was developed on the premise that there should be only one way (and preferably, one obvious way) to do things, a philosophy that resulted in a strict level of code standardization. The core programming language is quite small and the standard library is also large. In fact, Python's large library is one of its greatest benefits, providing different tools for programmers suited for a variety of tasks.</p>
+          </div>
+          <button class="collapsible guarantee-class class-faqs">Python vs. R: what is the Difference?</button>
+          <div class="content">
+          <p class='py-head-desc lastin-page-desc'>Python and R are two of today's most popular programming tools. When deciding between Python and R, you need to think about your specific needs. On one hand, Python is relatively easy for beginners to learn, is applicable across many disciplines, has a strict syntax that will help you become a better coder, and is fast to process large datasets. On the other hand, R has over 10,000 packages for data manipulation, is capable of easily making publication-quality graphics, boasts superior capability for statistical modeling, and is more widely used in academia, healthcare, and finance.</p>
+          </div>
+          <button class="collapsible guarantee-class class-faqs">What does it mean that Python is object-oriented?</button>
+          <div class="content">
+          <p class='py-head-desc lastin-page-desc'>Python is a multi-paradigm language, which means that it supports many programming approaches. Along with procedural and functional programming styles, Python also supports the object-oriented style of programming. In object-oriented programming, a developer completes a programming project by creating Python objects in code that represent objects in the actual world. These objects can contain both the data and functionality of the real-world object. To generate an object in Python you need a class. You can think of a class as a template. You create the template once, and then use the template to create as many objects as you need. Python classes have attributes to represent data and methods that add functionality. A class representing a car may have attributes like color, speed, and seats and methods like driving, steering, and stopping. The concept of combining data with</p>
+          </div>
+          <button class='last-lastbutton'>Show more</button>
+        </div>
+
+
+  </div>
+
+  
+
+
+
+
+
+    <footer>
+      <div class="container footer__container">
+        <div class="footer__1">
+          <a href="index.html" class="footer__logo"><h4>Teach2Learn</h4></a>
+          <p>Bringing knowledge to everyone</p>
+        </div>
+        <div class="footer__2">
+          <h4>Permalinks</h4>
+          <ul class="permalinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Q&A</a></li>
+            <li><a href="catelogies.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__3">
+          <h4>Privacy</h4>
+          <ul class="privacy">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__4">
+          <h4>Social Media</h4>
+          <div>
+            <p>Tel: (09)999999999</p>
+            <p>Email: nmcnpm123@gmail.com</p>
+          </div>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"
+                ><i
+                  ><i
+                    class="fa fa-facebook-official"
+                    aria-hidden="true"
+                  ></i> </i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-github" aria-hidden="true"></i> </a>
+            </li>
+          </ul>
+        </div>
+        
+    </footer>
+    <div class="footer__copyright">
+      <small>Copyright &copy; Teach2Learn</small>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="/scripts/main.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+    <script src='/scripts/categories.js'></script>
+    <script src="/scripts/mix2.js"></script>
+  </body>
+</html>

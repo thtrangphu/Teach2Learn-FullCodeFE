@@ -1,0 +1,212 @@
+* {
+  margin: 20;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #4360d658, rgba(84, 255, 17, 0.178));
+  color: aliceblue;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+
+.return {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+.return a {
+  color: #fff;
+}
+.container {
+  position: absolute;
+  max-width: 800px;
+  height: 500px;
+}
+
+.myRightCnt {
+  position: relative;
+  background-image: linear-gradient(to right, #6d88f8, #5f17);
+  border-radius: 25px;
+  padding: 25px;
+  height: 100%;
+  color: #fff;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myInput {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.myLeftCard {
+  position: relative;
+  background: #fff;
+  color: black;
+  border-radius: 25px;
+  padding: 25px;
+  height: 100%;
+}
+
+#check_1 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+}
+
+.end {
+  margin-bottom: 50px;
+}
+.row {
+  height: 100%;
+}
+
+.myCard {
+  margin: 15px 80px;
+  position: relative;
+  background: #fff;
+  height: 100%;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+.myLeftCard header {
+  color: #2b52ed !important;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.myForm {
+  margin-bottom: 15px;
+}
+
+.box {
+  position: relative;
+  margin: 20px;
+  margin-bottom: 60px;
+}
+
+.myLeftCard .myInput {
+  width: 230px;
+  border-radius: 25px;
+  padding: 10px;
+  padding-left: 50px;
+  border: none;
+  -webkit-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.7);
+}
+
+.fa {
+  font-size: 100px;
+}
+
+.myLeftCard .myInput:focus {
+  outline: none;
+}
+
+.myForm {
+  position: relative;
+  margin-top: 20px;
+}
+
+.myLeftCard .btn {
+  background: rgba(47, 130, 255, 0.719);
+  color: #fff;
+  width: 230px;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.7);
+}
+
+.myLeftCard .btn:hover {
+  background: #ccc;
+}
+
+.btn_out {
+  background: rgba(47, 130, 255, 0.719);
+  color: #fff;
+  width: 130px;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.7);
+}
+
+.one-line {
+  display: inline-block;
+}
+
+select {
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #fff;
+  background-image: none;
+  flex: 1;
+  color: #000;
+  cursor: pointer;
+}
+select::-ms-expand {
+  display: none;
+}
+.select {
+  position: relative;
+  display: flex;
+  margin-left: 100px;
+  margin-top: 15px;
+  width: 260px;
+  height: 3em;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.7);
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #ccc;
+  cursor: pointer;
+  pointer-events: none;
+  transition: 0.25s all ease;
+}
+.select:hover::after {
+  color: rgba(47, 130, 255, 0.719);
+}
+
+.role {
+  padding-left: 20px;
+  position: relative;
+  display: flex;
+  /* margin-left: 100px; */
+
+  margin: auto;
+  margin-top: 15px;
+  width: 260px;
+  height: 3em;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.7);
+}

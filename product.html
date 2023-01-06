@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teach2Learn</title>
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/product.css">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Lobster&amp;family=Playball&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiperjs hiệu ứng slidebar -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container nav__container navbar-expand-lg">
+        <a href="index.html"
+          ><img src="/images/logo2.png" class="logo" alt=""  /></a>
+        <div class="cate-dropdown ">
+          <button class="btn-radius-trans btn">
+            <i class="fa fa-align-justify"  style="color: #a1a7b3"></i>  <a href="courses.html">Categories</a></button>
+          <div class="dropdown-content">
+              <ul>
+                  <li>Development</li>
+                  <li>Business</li>
+                  <li> IT & Softwar</li>
+                  <li>Office Productivity</li>
+                  <li>Personal Development</li>
+              </ul>
+          </div>
+      </div>
+         <!--search bar of website-->
+        <div class="search-box">
+          <form class="search-container">
+            <input type="text" id="search-bar" class="input-area" placeholder="Search for Courses" /><a href="courses.html"><i class="fa fa-search input-logo"></i></a>
+          </form>
+        </div>
+        
+        <div class="cart">
+          <a href="cart.html" class="shopping-cart"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+        
+        <ul class="nav__menu">
+          <!-- <li><a href="index.html">Home</a></li> -->
+          <li><a href="about.html">Q&A</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li> 
+          <li><a href="log-in.html">Log in</a></li>
+          <li><a href="sign-up.html">Sign up</a
+          ></li>
+        </ul>
+       
+        <!-- ------------ -->
+        <button id="open-menu-btn">
+          <i class="fa fa-bars"></i>
+        </button>
+        <button id="close-menu-btn">
+          <i class="fa fa-times"></i>
+        </button>
+        <!-- ------------ -->
+      </div>
+      
+    </nav>
+    <!-- ==============END OF NAVBAR ============= -->
+
+    
+
+
+
+<div id="page_1">
+      <div class="sticky_sidebar">
+        <div id="sticky-br">
+          <h1 class="cl_000" style="font-size: 40px">500,000VND</h1>
+          <button
+            id="add_to_cart"
+            style="
+              width: 100%;
+              height: 50px;
+              margin: 1%;
+              color: #fff;
+              background-color: #0d6efd;
+              font-size: 1.2rem;
+              font-family: sf pro display, -apple-system, BlinkMacSystemFont,
+                Roboto, segoe ui, Helvetica, Arial, sans-serif,
+                apple color emoji, segoe ui emoji, segoe ui symbol;
+              font-weight: 700;
+            "
+            class="cartBtn"
+          >
+            <b id="showAddtoCart">Add to cart</b>
+            <b id="showAddedtoCart">Added to cart</b></button
+          ><br />
+          <button  onclick="cartPage()"
+            style="width: 100%; height: 50px; margin: 1%; font-size: 18px"
+          >
+            <b>Buy now</b>
+          </button>
+          <p
+            style="
+              text-align: center;
+              margin-top: 2%;
+              font-family: sf pro text, -apple-system, BlinkMacSystemFont,
+                Roboto, segoe ui, Helvetica, Arial, sans-serif,
+                apple color emoji, segoe ui emoji, segoe ui symbol;
+              font-weight: 400;
+              color: #1c1d1f;
+              font-size: 0.8rem;
+            "
+          >
+            30-days Money-back Guarantee
+          </p>
+          <div class="cl_000">
+            <h3
+            style="
+              margin-top: 4%;
+              font-family: sf pro display, -apple-system, BlinkMacSystemFont,
+                Roboto, segoe ui, Helvetica, Arial, sans-serif,
+                apple color emoji, segoe ui emoji, segoe ui symbol;
+              font-weight: 700;
+            "
+          >
+            This course includes:
+          </h3>
+          <p
+            style="
+              margin-top: 3%;
+              font-family: sf pro display, -apple-system, BlinkMacSystemFont,
+                Roboto, segoe ui, Helvetica, Arial, sans-serif,
+                apple color emoji, segoe ui emoji, segoe ui symbol;
+            "
+          >
+            22 hours on-demand video
+          </p>
+          <p
+            style="
+              margin-top: 3%;
+              font-family: sf pro display, -apple-system, BlinkMacSystemFont,
+                Roboto, segoe ui, Helvetica, Arial, sans-serif,
+                apple color emoji, segoe ui emoji, segoe ui symbol;
+            "
+          >
+            14 articles
+          </p>
+          <p
+            style="
+              margin-top: 3%;
+              font-family: sf pro display, -apple-system, BlinkMacSystemFont,
+                Roboto, segoe ui, Helvetica, Arial, sans-serif,
+                apple color emoji, segoe ui emoji, segoe ui symbol;
+            "
+          >
+            19 coding excercises
+          </p>
+          <p
+            style="
+              margin-top: 3%;
+              font-family: sf pro display, -apple-system, BlinkMacSystemFont,
+                Roboto, segoe ui, Helvetica, Arial, sans-serif,
+                apple color emoji, segoe ui emoji, segoe ui symbol;
+            "
+          >
+            Full lifetime access
+          </p>
+          <p
+            style="
+              margin-top: 3%;
+              font-family: sf pro display, -apple-system, BlinkMacSystemFont,
+                Roboto, segoe ui, Helvetica, Arial, sans-serif,
+                apple color emoji, segoe ui emoji, segoe ui symbol;
+            "
+          >
+            Access on mobile and Tv
+          </p>
+          <p
+            style="
+              margin-top: 3%;
+              font-family: sf pro display, -apple-system, BlinkMacSystemFont,
+                Roboto, segoe ui, Helvetica, Arial, sans-serif,
+                apple color emoji, segoe ui emoji, segoe ui symbol;
+            "
+          >
+            certificate of completion
+          </p>
+          <h3 style="margin-top: 5%; text-align: center">
+            <a
+              style="
+                color: black;
+                font-family: sf pro display, -apple-system, BlinkMacSystemFont,
+                  Roboto, segoe ui, Helvetica, Arial, sans-serif,
+                  apple color emoji, segoe ui emoji, segoe ui symbol;
+                font-weight: 700;
+                font-size: 0.8rem;
+              "
+              href=""
+              >Apply Coupon</a
+            >
+          </h3>
+          </div>
+          <hr style="margin-top: 10%" />
+          <br>
+          <!-- <button id="Teach2Learn_business">
+            <b>Try Teach2Learn Business</b>
+          </button> -->
+        </div>
+      </div>
+      <br />
+      <div class="page_2">
+        <div id="source_head">
+          <p><b>Development &nbsp; ></b></p>
+          <p><b>Programming &nbsp;></b></p>
+          <p><b>Python</b></p>
+        </div>
+        <h1 class="course-name">2021 Complete Python Bootcamp From Zero to Hero in Python</h1>
+        <p>
+          Learn Python like a Professional Start from the basics and go all the
+          way to creating your own applications and games
+        </p>
+        <div id="course_rating">
+          <button><b>Bestseller</b></button>
+          <p0>4.6⭐⭐⭐⭐⭐</p0>
+          <p1><a href="#">(367,223 ratings)</a></p1>
+          <p2>1,334,400 students</p2>
+        </div>
+        <p id="course_teach">created by <a href="#">jose potilla</a></p>
+        <div id="course_timing">
+          <p>⏳ last update 3/2021</p>
+          <p>🌐 English</p>
+          <p>© English[Auto], french[Auto], 5more</p>
+        </div>
+        <div class="button_1">
+          <button><b>Wishlist ❤</b></button>
+          <button style="width: 11%"><b>Share</b></button>
+          <button style="width: 19%"><b>Gift this course</b></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="learn_1">
+      <h1>What you'll learn</h1>
+      <div class="learn_2">
+        <ul>
+          <li>
+            <p>✓</p>
+            <p>
+              to use Python professionally, learning both Python 2 and Python 3!
+            </p>
+          </li>
+          <li>
+            <p>✓</p>
+            <p>
+              Learn advanced Python features, like the collections module and
+              how to work with timestamps!
+            </p>
+          </li>
+          <li>
+            <p>✓</p>
+            <p>Understand complex topics, like decorators.</p>
+          </li>
+          <li>
+            <p>✓</p>
+            <p>
+              Get an understanding of how to create GUIs in the Jupyter Notebook
+              system!
+            </p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>✓</p>
+            <p>Create games with Python, like Tic Tac Toe and Blackjack!</p>
+          </li>
+          <li>
+            <p>✓</p>
+            <p>Learn to use Object Oriented Programming with classes!</p>
+          </li>
+          <li>
+            <p>✓</p>
+            <p>
+              Understand how to use both the Jupyter Notebook and create .py
+              files
+            </p>
+          </li>
+          <li>
+            <p>✓</p>
+            <p>Build a complete understanding of Python from the ground up!</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- <div id="Teach2Learn_1">
+      <div class="Teach2Learn_2">
+        <img
+          src="/images/logo2.png"
+          alt=""
+        />
+        <p>
+          <b>Curated for the</b> <a href="#"><b>Teach2Learn Business</b></a
+          ><b>
+            <p1>collection</p1>
+          </b>
+        </p>
+      </div>
+    </div> -->
+
+    <br />
+    <br />
+
+    <h1 id="content_head">Course content</h1>
+    <div class="content_down">
+      <p>👉🏿23 sections 👉🏿155 lectures 👉🏿22h 13m total length</p>
+      <h3><a href="">Expand all sections</a></h3>
+    </div>
+    <div id="sliding">
+      <div class="sliding_1">
+        <button type="button" class="sliding_2"><b>Course Overview</b></button>
+        <div class="content">
+          <p>Auto-Wecome Message</p>
+          <p>Course introduction</p>
+          <p>Course Curriculum Overview</p>
+          <p>Why Python?</p>
+          <p>Course FAQs</p>
+        </div>
+        <button type="button" class="sliding_2"><b>Python Setup</b></button>
+        <div class="content">
+          <p>Command Line Basics</p>
+          <p>Installing Python (Step by step)</p>
+          <p>Running Python Code</p>
+          <p>Getting the Notebooks and the Course Material</p>
+          <p>Git and Github Overview (Optional)</p>
+        </div>
+        <button type="button" class="sliding_2"><b>Course Overview</b></button>
+        <div class="content">
+          <p>Auto-Wecome Message</p>
+          <p>Course introduction</p>
+          <p>Course Curriculum Overview</p>
+          <p>Why Python?</p>
+          <p>Course FAQs</p>
+        </div>
+        <button type="button" class="sliding_2">
+          <b>Python Object and Data Structure Basics</b>
+        </button>
+        <div class="content">
+          <p>ntroduction to Python Data Types</p>
+          <p>Python Numbers</p>
+          <p>Numbers: Simple Arithmetic</p>
+          <p>Numbers - FAQ</p>
+          <p>Numbers Quiz</p>
+        </div>
+        <button type="button" class="sliding_2"><b>Course Overview</b></button>
+        <div class="content">
+          <p>Auto-Wecome Message</p>
+          <p>Course introduction</p>
+          <p>Course Curriculum Overview</p>
+          <p>Why Python?</p>
+          <p>Course FAQs</p>
+          <p>Variable Assignments</p>
+          <p>Introduction to Strings</p>
+        </div>
+        <button type="button" class="sliding_2">
+          <b>Pyhton Comparison Operators</b>
+        </button>
+        <div class="content">
+          <p>Comparison Operators in Python</p>
+          <p>Chaining Comparison Operators in Python with Logical Operators</p>
+          <p>Comparison Operators Quiz</p>
+        </div>
+        <button type="button" class="sliding_2">
+          <b>Python Statements</b>
+        </button>
+        <div class="content">
+          <p>If Elif and Else Statements in Python</p>
+          <p>For Loops in Python</p>
+          <p>While Loops in Python</p>
+          <p>Useful Operators in Python</p>
+          <p>List Comprehensions in Python</p>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>13 more sections</h2>
+    </div>
+
+    <br />
+    <h1 id="con-head" style="margin-left: 10%; margin-top: 2%">Requirements</h1>
+    <li id="con-con" style="margin-left: 10%; margin-top: 1%">
+      Access to a computer with an internet connection.
+    </li>
+    <br />
+    <br />
+    <div class="top">
+      <h2>Top companies trust Teach2Learn</h2>
+      <p style="margin-top: 2%">
+        Get your team access to Teach2Learn's top 6,000+ courses
+      </p>
+      <div style="margin-top: 2%">
+        <img
+          src="https://s.Teach2Learncdn.com/partner-logos/v4/apple-dark.svg"
+          alt=""
+        />
+        <img
+          src="https://s.Teach2Learncdn.com/partner-logos/v4/box-dark.svg"
+          alt=""
+        />
+        <img
+          src="https://s.Teach2Learncdn.com/partner-logos/v4/volkswagen-dark.svg"
+          alt=""
+        />
+        <img
+          src="https://s.Teach2Learncdn.com/partner-logos/v4/netflix-dark.svg"
+          alt=""
+        />
+        <img
+          src="https://s.Teach2Learncdn.com/partner-logos/v4/eventbrite-dark.svg"
+          alt=""
+        />
+      </div>
+      <button>Try Teach2Learn Business</button>
+    </div>
+    <div class="description">
+      <h1
+        style="
+          margin-left: 10%;
+          margin-top: 2%;
+          font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
+            segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+            segoe ui emoji, segoe ui symbol;
+          font-weight: 700;
+        "
+      >
+        Description
+      </h1>
+      <div id="more">
+        <p>
+          <b
+            >Become a Python Programmer and learn one of employer's most
+            requested skills of 2021!</b
+          >
+        </p>
+        <br />
+        <p>
+          This is the
+          <b
+            >most comprehensive, yet straight-forward, course for the Python
+            programming language on Teach2Learn!</b
+          >
+          Whether you have never programmed before, already know basic syntax,
+          or want to learn about the advanced features of Python, this course is
+          for you! In this course we will<b> teach you Python 3.</b>
+        </p>
+        <br />
+        <p>
+          With <b>over 100 lectures</b> and more than 21 hours of video this
+          comprehensive course leaves no stone unturned! This course includes
+          quizzes, tests, coding exercises and homework assignments as well as 3
+          major projects to create a Python project portfolio!
+        </p>
+
+        <span id="dots"></span>
+        <div id="more_1">
+          <p>
+            <b
+              >Learn how to use Python for real-world tasks, such as working
+              with PDF Files, sending emails, reading Excel files, Scraping
+              websites for informations, working with image files, and much
+              more!</b
+            >
+          </p>
+          <br />
+          <p>
+            This course will teach you Python in a practical manner, with every
+            lecture comes a full coding screencast and a corresponding code
+            notebook! Learn in whatever manner is best for you!
+          </p>
+          <br />
+          <p>
+            We will start by helping you get Python installed on your computer,
+            regardless of your operating system, whether its Linux, MacOS, or
+            Windows, we've got you covered.
+          </p>
+          <br />
+          <p>We cover a wide variety of topics, including:</p>
+          <ul>
+            <li>Command Line Basics</li>
+            <li>Installing Python</li>
+            <li>Running Python Code</li>
+            <li>Strings</li>
+            <li>Lists</li>
+            <li>Dictionaries</li>
+            <li>Tuples</li>
+            <li>Number Data Types</li>
+            <li>Print Formatting</li>
+            <li>Functions</li>
+            <li>Scope</li>
+          </ul>
+        </div>
+        <button
+          onclick="show_more()"
+          id="btn"
+          style="
+            color: #fff;
+            border: transparent;
+            font-size: 15px;
+            margin-top: 2%;
+            background-color: transparent;
+            font-family: sf pro display, -apple-system, BlinkMacSystemFont,
+                Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+                segoe ui emoji, segoe ui symbol;
+              font-weight: 700;
+          "
+        >
+          Show more 👇🏼
+        </button>
+      </div>
+    </div>
+    <br />
+    <div class="Featured">
+      <h1>Featured review</h1>
+      <br />
+      <div style="display: flex; gap: 1%">
+        <img
+          style="width: 10%; height: 10%; border-radius: 50%"
+          src="/images/trang.png"
+          alt=""
+        />
+        <div id="review_profile">
+          <p style="margin-top: 5%; font-size: 1.4rem; font-weight: 700">
+            <b>Phù Thị Kim Trang</b>
+          </p>
+          <p style="margin-top: 5%; font-size: 1rem; font-weight: 400">
+            9 courses
+          </p>
+          <p style="margin-top: 5%; font-size: 1rem; font-weight: 400">
+            2 reviews
+          </p>
+        </div>
+      </div>
+      <p
+        style="
+          margin-top: 2%;
+          font-family: sf pro display, -apple-system, BlinkMacSystemFont, Roboto,
+            segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+            segoe ui emoji, segoe ui symbol;
+          font-weight: 400;
+          color: #6a6f73;
+        "
+      >
+        ⭐⭐⭐⭐⭐ 9 months ago
+      </p>
+      <p
+        style="
+          margin-top: 2%;
+          font-size: 1rem;
+          font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto,
+            segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+            segoe ui emoji, segoe ui symbol;
+          font-weight: 400;
+        "
+      >
+        Everything on this course is a goldmine except for the GUI since it's
+        specific for Jupyter Notebooks and it's missing the video for GUI
+        Events. Still it was a nice introduction to GUI. Don't let that
+        disappoint you though. THIS IS A MUST HAVE COURSE. I have already
+        recommended it to few people and always will. Do yourself a favor and do
+        this course if you want to learn Python 3. Thank you so much for this
+        course, Jose-sensei!!
+      </p>
+      <br />
+      <p
+        style="
+          margin-top: 2%;
+          font-family: sf pro text, -apple-system, BlinkMacSystemFont, Roboto,
+            segoe ui, Helvetica, Arial, sans-serif, apple color emoji,
+            segoe ui emoji, segoe ui symbol;
+          font-weight: 400;
+        "
+      >
+        Was this review helpful?
+      </p>
+      <p style="margin-top: 2%">👍🏻 👎🏻 <a href="">Report</a></p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+    
+    <footer>
+      <div class="container footer__container">
+        <div class="footer__1">
+          <a href="index.html" class="footer__logo"><h4>Teach2Learn</h4></a>
+          <p>Bringing knowledge to everyone</p>
+        </div>
+        <div class="footer__2">
+          <h4>Permalinks</h4>
+          <ul class="permalinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Q&A</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__3">
+          <h4>Privacy</h4>
+          <ul class="privacy">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__4">
+          <h4>Social Media</h4>
+          <div>
+            <p>Tel: (09)999999999</p>
+            <p>Email: nmcnpm123@gmail.com</p>
+          </div>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"
+                ><i
+                  ><i
+                    class="fa fa-facebook-official"
+                    aria-hidden="true"
+                  ></i> </i
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-github" aria-hidden="true"></i> </a>
+            </li>
+          </ul>
+        </div>
+        
+    </footer>
+    <div class="footer__copyright">
+      <small>Copyright &copy; Teach2Learn</small>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="/scripts/main.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+   
+
+  <script src="/scripts/product.js"></script>
+  <script src="/scripts/mix2.js"></script>
+  </body>
+</html>

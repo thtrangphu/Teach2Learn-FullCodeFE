@@ -1,0 +1,44 @@
+a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+input[type="text"] + span {
+  display: none;
+  width: 100%;
+}
+input[type="text"]:focus + span {
+  display: inline;
+  width: 100%;
+}
+
+.videos-list ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.videos-list ul li {
+  list-style: none;
+  float: left;
+  width: 19%;
+  margin: 5px;
+  position: relative;
+}
+
+.videos-list ul li img {
+  width: 100%;
+  border-radius: 10px;
+  height: 110px;
+}
+
+.videos-list ul li span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.videos-list ul li span svg {
+  color: #fff;
+}
