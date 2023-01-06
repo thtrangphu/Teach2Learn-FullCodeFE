@@ -1,120 +1,101 @@
-// var emb_key = "YOUR_API_KEY";
+const quizData = [
+  {
+    question: "Which language runs in a web browser?",
+    a: "Java",
+    b: "C",
+    c: "Python",
+    d: "JavaScript",
+    correct: "d",
+  },
+  {
+    question: "What does CSS stand for?",
+    a: "Central Style Sheets",
+    b: "Cascading Style Sheets",
+    c: "Cascading Simple Sheets",
+    d: "Cars SUVs Sailboats",
+    correct: "b",
+  },
+  {
+    question: "What does HTML stand for?",
+    a: "Hypertext Markup Language",
+    b: "Hypertext Markdown Language",
+    c: "Hyperloop Machine Language",
+    d: "Helicopters Terminals Motorboats Lamborginis",
+    correct: "a",
+  },
+  {
+    question: "What year was JavaScript launched?",
+    a: "1996",
+    b: "1995",
+    c: "1994",
+    d: "none of the above",
+    correct: "b",
+  },
+];
 
-// $(document).ready(function () {
-//   // Connect the styled button with the form input. The input is hidden. This is done in order to have a custom embed button.
-//   $("#upload-button").click(function (e) {
-//     $("#video_file").click();
-//   });
+const quiz = document.getElementById("quiz");
+const answerEls = document.querySelectorAll(".answer");
+const questionEl = document.getElementById("question");
+const a_text = document.getElementById("a_text");
+const b_text = document.getElementById("b_text");
+const c_text = document.getElementById("c_text");
+const d_text = document.getElementById("d_text");
+const submitBtn = document.getElementById("submit");
 
-//   // Once the video file is added, display the progress UI and submit the form for upload.
-//   $("#video_file").change(function (e) {
-//     $("#loader").css("display", "block");
-//     $("#progress-percent").css("display", "block");
-//     $("form[name='upload_form']").submit();
-//     e.preventDefault();
-//   });
+let currentQuiz = 0;
+let score = 0;
 
-//   // The sumbit function makes a post request. By default this replaces the page with the response, which is the JSON response after the post request. To stay on the same page the ajax request requires some more information.
-//   $("form[name='upload_form'").submit(function (e) {
-//     e.preventDefault();
-//     var fd = new FormData($("form")[0]);
-//     $.ajax({
-//       url: $(this).attr("action"),
-//       data: fd,
-//       processData: false,
-//       contentType: false,
-//       crossDomain: true,
-//       headers: {
-//         "Access-Control-Allow-Origin": "*",
-//       },
-//       type: "POST",
-//       success: function (data, textStatus, xhr) {
-//         // On receiving the response, update the UI with the embed code and URL of the video
-//         successText(data);
+loadQuiz();
 
-//         //Query the status endpoint
-//         var call =
-//           "https://upload.embed.ly/1/status?key=" +
-//           emb_key +
-//           "&video_id=" +
-//           data.video_id;
+function loadQuiz() {
+  deselectAnswers();
 
-//         //Poll status endpoint until video is processed
-//         pollForFinished(call, function () {
-//           renderIframe(data);
-//         });
-//       },
-//       error: function (XMLHttpRequest, textStatus, errorThrown) {
-//         console.log("Upload Failed for video: " + errorThrown);
-//       },
-//       xhr: function () {
-//         //Monitor and display the percentage uploaded
-//         var xhr = new window.XMLHttpRequest();
-//         xhr.upload.addEventListener(
-//           "progress",
-//           function (evt) {
-//             if (evt.lengthComputable) {
-//               var percentComplete = (evt.loaded / evt.total) * 100.0;
-//               var text = percentComplete.toFixed(2) + "% uploaded.";
-//               $(".video-display").html("<p>" + text + "</p>");
-//             }
-//           },
-//           false
-//         );
-//         return xhr;
-//       },
-//     });
-//   });
-// });
+  const currentQuizData = quizData[currentQuiz];
 
-// var successText = function (data) {
-//   $("#upload-button").css("display", "none");
-//   $(".url-display").html("<h1>URL</h1>");
-//   $(".embed-code").html(
-//     "<h1>Embed Code</h1><p>You can copy and paste this embed code while the video processes.</p>"
-//   );
-//   $(".url-display").append(
-//     "<p><a target='_blank' href='" + data.url + "'>" + data.url + "</a></p>"
-//   );
-//   $(".embed-code").append(
-//     "<textarea name='textarea' rows='7' cols='50'>" + data.html + "</textarea>"
-//   );
-//   $(".video-display").html(
-//     "<h1>Video</h1><p>The video is currently processing and will display momentarily.</p>"
-//   );
-// };
+  questionEl.innerText = currentQuizData.question;
+  a_text.innerText = currentQuizData.a;
+  b_text.innerText = currentQuizData.b;
+  c_text.innerText = currentQuizData.c;
+  d_text.innerText = currentQuizData.d;
+}
 
-// var renderIframe = function (data) {
-//   $("#loader").css("display", "none");
-//   $("#progress-percent").css("display", "none");
-//   $(".video-display").html("<h1>Video</h1><p>" + data.html + "</p>");
-// };
+function deselectAnswers() {
+  answerEls.forEach((answerEl) => (answerEl.checked = false));
+}
 
-// var checkProcessed = function (_call, cb) {
-//   $.ajax({
-//     url: _call,
-//     type: "GET",
-//     success: function (d) {
-//       cb(d);
-//     },
-//     error: function (d) {
-//       console.log("error!" + JSON.stringify(d));
-//       cb(d);
-//     },
-//   });
-// };
+function getSelected() {
+  let answer;
 
-// var pollForFinished = function (_call, cb) {
-//   checkProcessed(_call, function (res) {
-//     if (res.status == "finished") {
-//       cb();
-//     } else if (res.status == "cancelled" || res.status == "failed") {
-//       $(".video-display").html("<h1>Video</h1><p>" + res.status + "</p>");
-//     } else {
-//       setTimeout(pollForFinished(_call, cb), 10000);
-//     }
-//   });
-// };
+  answerEls.forEach((answerEl) => {
+    if (answerEl.checked) {
+      answer = answerEl.id;
+    }
+  });
+
+  return answer;
+}
+
+submitBtn.addEventListener("click", () => {
+  const answer = getSelected();
+
+  if (answer) {
+    if (answer === quizData[currentQuiz].correct) {
+      score++;
+    }
+
+    currentQuiz++;
+
+    if (currentQuiz < quizData.length) {
+      loadQuiz();
+    } else {
+      quiz.innerHTML = `
+              <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+
+              <button onclick="location.reload()">Reload</button>
+          `;
+    }
+  }
+});
 
 $("#addPhotosBtn").click(function () {
   $(this).parents().find("#addPhotosInput").click();

@@ -2,6 +2,14 @@ a {
   text-decoration: none !important;
   color: #fff !important;
 }
+* {
+  color: #fff;
+}
+.nav__menu{
+  right: 0;
+  position: absolute;
+}
+}
 input[type="text"] + span {
   display: none;
   width: 100%;
